@@ -165,6 +165,10 @@ function loadWidget(config) {
 			modelId = 2; // 模型 ID
 			modelTexturesId = 53; // 材质 ID
 		}
+                               else{
+                                                modelId = 2; // 模型 ID
+			modelTexturesId = 53; // 材质 ID
+                                }
 		loadModel(modelId, modelTexturesId);
 		fetch(waifuPath)
 			.then(response => response.json())
